@@ -1,18 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.technoabsolute.www.catering.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
-</android.support.constraint.ConstraintLayout>
+    android:orientation="vertical"
+    android:background="@drawable/loginBackground">
+
+
+
+    <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+        <View
+            android:id="@+id/opacityFilter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/black"
+            android:alpha="0.7">
+        </View>
+       <LinearLayout
+           android:id="@+id/tablebox"
+           android:layout_width="200dp"
+           android:layout_height="100dp"
+           android:orientation="vertical"
+           android:layout_centerHorizontal="true"
+           android:layout_centerVertical="true">
+
+           <EditText
+               android:id="@+id/username"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textColor="@color/colorsecondary"
+               android:layout_weight="1"
+               android:ems="10"
+               android:inputType="textPersonName"
+               android:text="@string/username"
+               />
+
+           <EditText
+               android:id="@+id/password"
+               android:textColor="@color/colorsecondary"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_weight="1"
+               android:ems="10"
+               android:inputType="textPassword"
+               android:text="@string/password"
+              />
+
+
+       </LinearLayout>
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="50dp"
+           android:orientation="horizontal"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentLeft="true"
+           android:layout_alignParentStart="true"
+           android:padding="10dp"
+           android:baselineAligned="false">
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1">
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@color/colorPrimary"
+                   android:text="@string/signup"
+                   android:textColor="@color/colorsecondary"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1">
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="transparent"/>
+
+           </LinearLayout>
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:layout_weight="1">
+               <Button
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:background="@color/colorPrimary"
+                   android:text="@string/next"
+                   android:textColor="@color/colorsecondary"/>
+           </LinearLayout>
+       </LinearLayout>
+
+   </RelativeLayout>
+
+</LinearLayout>
