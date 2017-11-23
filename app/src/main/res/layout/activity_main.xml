@@ -6,7 +6,7 @@
 
 
     android:orientation="vertical"
-    android:background="@drawable/loginBackground">
+    android:background="@drawable/loginbackground">
 
 
 
